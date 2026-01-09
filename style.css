@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  /*làm khung chứa ảnh và mô tả*/
+  .Animal-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: 20px auto;
+  }
+  
+  /*thẻ chứa ảnh và tên, mô tả*/
+  .animal-card {
+    background: #cde9a8;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    width: 200px;
+    cursor: pointer; /*nút bấm*/
+    transition: transform 0.2s;
+    margin: 10px;
+  }
+  
+  /*hiệu ứng khi rê chuột*/
+  .animal-card:hover {
+    transform: scale(1.05); /*phóng to*/
+  }
+  
+  /*chọn thẻ img trong animal-card*/
+  .animal-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover; /*cắt ảnh vừa khung*/
+    border-radius: 10px 10px 0 0;
+  }
+  
+  /*chọn phần tử có class animal*/
+  .animal-name {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  /*chọn phần tử có class danhsach*/
+  .danhsach {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 20px auto;
+  }
+  
+  /*chọn các ảnh trong phần tử có class danhsach*/
+  .danhsach img {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
